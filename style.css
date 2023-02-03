@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --blue-background: #06b6d4;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+.sidebar {
+    grid-row: 1 / span 2;
+    border: solid 2px;
+    background-color: var(--blue-background);
+    padding: 25px 10px 50px 20px;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 6fr 3fr;
+    gap: 50px;
+}
+
+.sidebar-top {
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(227deg) brightness(103%) contrast(102%);
+}
+
+.dashboard-logo {
+    width: 40px;
+}
+
+.dashboard-text {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.sidebar-middle {
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-logo {
+    width: 26px;
+    justify-self: center;
+}
+
+.menu-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar-bottom {
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.header {
+    background-color: white;
+    padding-top: 25px;
+}
+
+.main-content {
+    border: solid 2px;
+}
