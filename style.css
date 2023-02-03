@@ -29,7 +29,7 @@ body {
 .sidebar {
     grid-row: 1 / span 2;
     background-color: var(--blue-background);
-    padding: 20px 10px 10px 20px;
+    padding: 20px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -228,4 +228,67 @@ body {
 .card-button {
     cursor: pointer;
     height: 25px;
+}
+
+.ann-content {
+    background-color: white;
+    padding: 10px 30px 30px 30px;
+    border-radius: 10px;
+}
+
+.announcements ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ann-title {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.ann-item + .ann-item {
+    border-top: solid 2px var(--gray-2);
+}
+
+.ann-details {
+    color: var(--gray-m);
+}
+
+.trending {
+    margin-top: 20px;
+}
+
+.trending-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.trending-item {
+    display: flex;
+    gap: 25px;
+}
+
+.trending-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trending-name p {
+    margin: 0;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.full-name {
+    color: var(--gray-m);
 }
