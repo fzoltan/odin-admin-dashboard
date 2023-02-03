@@ -9,6 +9,10 @@
     --gray-m: #78716c;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin: 0;
@@ -25,9 +29,10 @@ body {
 .sidebar {
     grid-row: 1 / span 2;
     background-color: var(--blue-background);
-    padding: 25px 10px 300px 20px;
+    padding: 20px 10px 10px 20px;
     color: white;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 50px;
 }
 
@@ -77,7 +82,7 @@ body {
 
 .header {
     background-color: var(--gray-1);
-    padding: 25px 50px;
+    padding: 20px 50px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
@@ -173,4 +178,54 @@ body {
 .main-content {
     background-color: var(--gray-2);
     padding: 25px 50px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    grid-row: 1 / span 2;
+}
+
+.main-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.projects-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 10px solid var(--blue-background);
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.card-description {
+    color: var(--gray-m);
+    font-weight: bold;
+}
+
+.card-button-section {
+    align-self: flex-end;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.card-button {
+    cursor: pointer;
+    height: 25px;
 }
