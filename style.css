@@ -2,6 +2,11 @@
 
 :root {
     --blue-background: #06b6d4;
+    --gray-1: #fafaf9;
+    --gray-2: #e7e5e4;
+    --gray-3: #292524;
+    --gray-4: #1c1917;
+    --gray-m: #78716c;
 }
 
 body {
@@ -11,19 +16,18 @@ body {
 }
 
 .container {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 8fr;
 }
 
 .sidebar {
     grid-row: 1 / span 2;
-    border: solid 2px;
     background-color: var(--blue-background);
-    padding: 25px 10px 50px 20px;
+    padding: 25px 10px 300px 20px;
     color: white;
     display: grid;
-    grid-template-rows: 1fr 6fr 3fr;
     gap: 50px;
 }
 
@@ -72,10 +76,101 @@ body {
 }
 
 .header {
-    background-color: white;
-    padding-top: 25px;
+    background-color: var(--gray-1);
+    padding: 25px 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-logo {
+    width: 30px;
+}
+
+.profile-picture-small {
+    width: 50px;
+}
+
+.profile-picture-big {
+    width: 75px;
+}
+
+.search-input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input input {
+    width: 75%;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: var(--gray-2);
+    padding-left: 10px;
+}
+
+.header-name-small {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.welcome-text p {
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-small {
+    font-size: 15px;
+}
+
+.welcome-big {
+    font-size: 24px;
+}
+
+.top-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button {
+    background-color: var(--blue-background);
+    color: white;
+    padding: 10px 25px;
+    border: 0px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .main-content {
-    border: solid 2px;
+    background-color: var(--gray-2);
+    padding: 25px 50px;
 }
